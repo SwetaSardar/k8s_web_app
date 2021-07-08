@@ -1,0 +1,70 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1549839731-9652aa56a8cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80");
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.title {
+  font-family: serif;
+  padding-top: 20px;
+  font-size: 10vh;
+  color: deeppink;
+  margin: 0;
+  text-align: center;
+}
+
+.heading {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  font-size: 8vh;
+  color: white;
+  margin: 0;
+}
+
+input[type="text"] {
+  justify-content: center;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 30%;
+  padding: 12px 40px;
+  text-align: top;
+  border-radius: 10px;
+  font-weight: bold;
+  /*font-size: 5px;*/
+}
+
+.wrapper {
+  text-align: center;
+}
+
+#btn {
+  background-color: rgb(240, 40, 140);
+  color: rgb(239, 237, 243);
+  border: none;
+  padding: 10px 19px;
+  text-decoration: none;
+  margin-left: 29px;
+  cursor: pointer;
+  font-size: 23px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#d1 {
+  border: 8px solid rgba(4, 13, 54, 0.788);
+  width: 30%;
+  padding: 180px 180px;
+  margin: auto;
+  height: 38%;
+  background-color: rgb(196, 230, 218);
+  font-size: 21px;
+  overflow: scroll;
+  border-radius: 16px;
+  font-weight: bold;
+  text-align: top;
+}
