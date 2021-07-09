@@ -12,7 +12,7 @@ function code(k) {
 function f1() {
   var i = document.getElementById("in1").value;
 
-  if (i.includes("show") && i.includes("pod") || i.includes("pods")) {
+  if (i.includes("show") &&  i.includes("pods")) {
     var comb = " get pods ";
     code(comb);
   } else if (i.includes("create") && i.includes("deployment")) {
