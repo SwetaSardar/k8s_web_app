@@ -1,6 +1,7 @@
 body {
   background-image: url("https://images.unsplash.com/photo-1549839731-9652aa56a8cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80");
 
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -42,7 +43,7 @@ input[type="text"] {
 }
 
 #btn {
-  background-color: rgb(240, 40, 140);
+  background-color: rgb(240, 40, 140);	
   color: rgb(239, 237, 243);
   border: none;
   padding: 10px 19px;
@@ -57,14 +58,14 @@ input[type="text"] {
 
 #d1 {
   border: 8px solid rgba(4, 13, 54, 0.788);
-  width: 30%;
-  padding: 180px 180px;
+  width: 45%;
+  padding: 120px 120px;
   margin: auto;
-  height: 38%;
+  height: 10%;
   background-color: rgb(196, 230, 218);
   font-size: 21px;
   overflow: scroll;
   border-radius: 16px;
   font-weight: bold;
-  text-align: top;
+  text-align: left;
 }
