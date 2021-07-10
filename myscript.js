@@ -16,29 +16,34 @@ function f1() {
     var comb = " get pods ";
     code(comb);
   } else if (i.includes("create") && i.includes("deployment")) {
-    var podname = prompt("Enter deployment Name", "ex-pod1");
-    var imagename = prompt("Enter Image Name", "ex-centos");
+    var podname = prompt("Enter deployment Name");
+    var imagename = prompt("Enter Image Name");
     var comb = " create deployment " + podname + " " + " --image=" + imagename;
     code(comb);
   } else if (i.includes("create") && i.includes("pod")) {
-    var podname = prompt("Enter Pod Name", "ex-pod1");
-    var imagename = prompt("Enter Image Name", "ex-centos");
+    var podname = prompt("Enter Pod Name");
+    var imagename = prompt("Enter Image Name");
     var comb = " run " + podname + " " + " --image=" + imagename;
     code(comb);
   } else if (i.includes("show") && i.includes("pods")) {
     var comb = " get pods ";
     code(comb);
-  } else if (i.includes("delete") && i.includes("pods")) {
-    var podname = prompt("Enter Pod Name", "ex-pod1");
+  } else if (i.includes("delete") && i.includes("pods") || i.includes("pod")) {
+    var podname = prompt("Enter Pod Name");
     var comb = " delete pod " + podname;
     code(comb);
+	  
+  } else if (i.includes("delete") && i.includes("deployment")) {
+    var podname = prompt("Enter deployment Name");
+    var comb = " delete deployment " + podname;
+    code(comb);
   } else if (i.includes("scale") && i.includes("deployment")) {
-    var dname = prompt("Enter Deployment Name", "ex-pod1");
+    var dname = prompt("Enter Deployment Name", "existing pod name");
     var r_no = prompt("Enter Required Replicas", "ex- 1-9");
     var comb = " scale deployment " + dname + " " + " --replicas=" + r_no;
     code(comb);
   } else if (i.includes("expose") && i.includes("deployment")) {
-    var dname = prompt("Enter Deployment Name", "ex-pod1");
+    var dname = prompt("Enter Deployment Name", "existing deploy name");
     var p_no = prompt("Enter Port No", "ex- 1-9");
     var comb =
       " expose deployment " +
@@ -48,13 +53,13 @@ function f1() {
       p_no +
       " --type=NodePort";
     code(comb);
-  } else if (i.includes("clear") && i.includes("environment")) {
+  } else if (i.includes("clear") || i.includes("delete") && i.includes("environment") || i.includes("env")) {
     var comb = " delete --all all";
     code(comb);
-  } else if (i.includes("show") && i.includes("exposed") && i.includes("ip")) {
+  } else if (i.includes("show") && i.includes("exposed") && i.includes("service")) {
     var comb = " get service";
     code(comb);
   } else {
-    alert("Please Enter valid string");
+    alert("Please Enter valid command");
   }
 }
