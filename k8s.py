@@ -1,14 +1,13 @@
 #!/usr/bin/python3
 
 import cgi
-import subprocess 
-
+import subprocess
 
 
 print("content-type: text/html")
 print()
 
 field =  cgi.FieldStorage()
-cmd = field.getvalue("x") 
+cmd = field.getvalue("x")
 
-print(subprocess.getoutput(" sudo kubectl " + cmd +  " --kubeconfig admin.conf") 
+print(subprocess.getoutput("sudo kubectl " + cmd +  " --kubeconfig admin.conf")) 
